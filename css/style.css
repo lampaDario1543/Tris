@@ -1,0 +1,112 @@
+:root{
+    --mainBg:#726868;
+}
+*{
+    margin:0;
+    padding: 0;
+    user-select: none;
+}
+body{
+    background-color: var(--mainBg);
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    color:#ffffff;
+    font-size: 7em;
+    font-family: Bebas Neue;
+}
+.gameArea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    font-family: 'Press Start 2P', cursive;
+    margin-right:10%;
+}
+.row{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+}
+.cell{
+    width: 100px;
+    height:100px;
+    border:solid 5px #0f48b1;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(0,0,0,.2);
+    background-color: #fff;
+    margin: 10px;
+    color: #fff;
+    font-size: 450%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell:hover{
+    cursor: pointer;
+}
+.gameAlert{
+    width:max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica;
+    font-size: 200%;
+    padding:3%;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.3);
+}
+.gameAlert a{
+    border-radius: 15px;
+    padding:3%;
+    border: #0f48b1 5px solid;
+    color:#000;
+    transition: all ease-in-out .2s;
+    margin-top: 5%;
+}
+.gameAlert a:hover{
+    border-radius: 15px;
+    padding:3%;
+    border: #0f48b1 5px solid;
+    background-color: #0f48b1;
+    color:#fff;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+.red{
+    color:red;
+}
+.blue{
+    color:blue;
+}
+.gameAlertArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:400px;
+    height:400px;
+    border-radius: 15px;
+    position:absolute;
+}
+#turn, #points{
+    padding:2%;
+}
+#points{
+    font-family: 'Press Start 2P', cursive;
+    margin-right: 10%;
+    flex-direction: row;
+}
