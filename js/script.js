@@ -5,7 +5,7 @@ const cellSign=[];
 var bluePoints=0;
 var redPoints=0;
 
-showInfo(`E' il turno di 'X'`);
+showInfo(`\u00C8 il turno di 'X'`);
 showPoints();
 
 for(let i=0;i<cells.length;i++){
@@ -19,7 +19,7 @@ for(let i=0;i<cells.length;i++){
         else
             sign='O';
         
-        showInfo(`E' il turno di '${sign=='X'? 'O' : 'X'}'`);
+        showInfo(`\u00C8 il turno di '${sign=='X'? 'O' : 'X'}'`);
         if(sign=='X')
             cells[i].classList.add('blue');
         else
@@ -93,7 +93,7 @@ function init(){
         
     }
     tableEl.removeChild(tableEl.lastChild);
-    showInfo(`E' il turno di 'X'`);
+    showInfo(`\u00C8 il turno di 'X'`);
 }
 function showPoints(){
     const bluePointsEl=document.getElementById('bluePoints');
